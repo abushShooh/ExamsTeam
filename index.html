@@ -1,11 +1,1230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Городской медицинский центр</title>
+    <link rel="icon" type="image/svg+xml" href="./IMage/abdullo/favicon.svg">
+    <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    
+
+<body class="bg-[#f5f7fa] font-sans text-[#1c2733] antialiased">
+    <div class="min-h-screen">
+        <header class="border-b border-[#e5edf3] bg-white">
+            <div class="mx-auto max-w-[1280px] px-4 py-4 lg:px-6">
+                <div class="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
+                    <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+                        <a href="./index.html" class="shrink-0">
+                            <img src="./IMage/munis/logo.svg" alt="Городской медицинский центр"
+                                class="h-11 w-auto sm:h-12">
+                        </a>
+
+                        <div
+                            class="grid gap-4 text-[13px] text-[#526779] sm:grid-cols-2 xl:flex xl:items-start xl:gap-8">
+                            <div class="space-y-1">
+                                <a href="tel:84959260603"
+                                    class="block text-lg font-semibold text-[#005b8f] transition hover:text-[#003f63]">
+                                    8 (495) 926-06-03
+                                </a>
+                                <a href="https://wa.me/74959260603"
+                                    class="inline-flex items-center gap-2 text-[#25D366] transition hover:opacity-80">
+                                    <img src="./IMage/munis/socialWhatsApp.svg" alt="" class="h-[18px] w-[18px]">
+                                    Whatsapp
+                                </a>
+                            </div>
+
+                            <div class="space-y-1">
+                                <a href="mailto:info@gormedcentre.ru" class="block transition hover:text-[#005b8f]">
+                                    info@gormedcentre.ru
+                                </a>
+                                <a href="tel:84959260603"
+                                    class="inline-block border-b border-dotted border-[#9db0be] pb-0.5 text-[#7e93a5] transition hover:border-[#005b8f] hover:text-[#005b8f]">
+                                    Заказать звонок
+                                </a>
+                            </div>
+
+                            <div class="max-w-[180px] leading-5">
+                                г. Мытищи,
+                                <br>
+                                ул. Рождественская, д. 7
+                            </div>
+
+                            <div class="leading-5">
+                                Ежедневно
+                                <br>
+                                9:00 до 21:00
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-3 self-start xl:self-auto">
+                        <button type="button"
+                            class="flex h-11 w-11 items-center justify-center rounded-md bg-[#16c7c8] transition hover:bg-[#10b6b7]"
+                            aria-label="Поиск">
+                            <img src="./IMage/munis/search.svg" alt="" class="h-5 w-5">
+                        </button>
+                        <a href="./index.html#hero"
+                            class="inline-flex items-center justify-center rounded-md bg-[#eef6fb] px-5 py-3 text-sm font-medium text-[#005b8f] transition hover:bg-[#dceaf4]">
+                            Личный кабинет
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-4 flex flex-col gap-4 border-t border-[#eef3f7] pt-4 lg:flex-row lg:items-center lg:justify-between">
+                    <nav aria-label="Основная навигация"
+                        class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm font-medium text-[#1f3142]">
+                        <a href="./index.html" aria-current="page"
+                            class="border-b-2 border-[#16c7c8] pb-1 text-[#005b8f]">
+                            Page 1
+                        </a>
+                        <a href="./Pages/munis.html" class="transition hover:text-[#005b8f]">Page 2</a>
+                        <a href="./Pages/behruz.html" class="transition hover:text-[#005b8f]">Page 3</a>
+                        <a href="./Pages/abdullo.html" class="transition hover:text-[#005b8f]">Page 4</a>
+                        <a href="./index.html#promo" class="transition hover:text-[#005b8f]">Акции</a>
+                        <a href="./index.html#services" class="transition hover:text-[#005b8f]">Услуги</a>
+                        <a href="./index.html#doctors" class="transition hover:text-[#005b8f]">Врачи</a>
+                        <a href="./index.html#contacts" class="transition hover:text-[#005b8f]">Контакты</a>
+                    </nav>
+
+                    <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+                        <a href="./index.html#accessibility"
+                            class="inline-flex items-center gap-2 text-sm text-[#506676] transition hover:text-[#005b8f]">
+                            <img src="./IMage/munis/iconGlass.svg" alt="" class="h-4 w-4">
+                            Версия для слабовидящих
+                        </a>
+                        <a href="tel:84959260603"
+                            class="inline-flex items-center justify-center rounded-md bg-[#005b8f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#00456c]">
+                            Запись на приём
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero" class="relative overflow-hidden bg-[#37bdd2]">
+                <img src="./IMage/abubakr/hero.jpg" alt="Герой секции"
+                    class="absolute inset-0 h-full w-full object-cover object-center">
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(90deg,rgba(13,175,205,0.96)_0%,rgba(54,151,212,0.8)_45%,rgba(72,127,212,0.22)_100%)]">
+                </div>
+
+                <div class="relative mx-auto max-w-[1280px] px-4 py-14 lg:px-6 lg:py-20">
+                    <div class="max-w-[520px]">
+                        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-white/80">
+                            Городской медицинский центр
+                        </p>
+                        <h1
+                            class="max-w-[460px] text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-[56px]">
+                            Современная медицина рядом с вами
+                        </h1>
+                        <p class="mt-6 max-w-[430px] text-base leading-7 text-white/90">
+                            Диагностика, консультации специалистов и удобная запись на приём в одном медицинском центре.
+                        </p>
+                        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                            <a href="tel:84959260603"
+                                class="inline-flex items-center justify-center rounded-md bg-white px-7 py-3.5 text-sm font-semibold text-[#005b8f] transition hover:bg-[#eef6fb]">
+                                Записаться
+                            </a>
+                            <a href="./index.html#services"
+                                class="inline-flex items-center justify-center rounded-md border border-white/40 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10">
+                                Смотреть услуги
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="relative z-10 -mt-10 pb-12 lg:-mt-14 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+                        <article
+                            class="flex h-full flex-col rounded-[8px] bg-white px-5 py-5 shadow-[0_18px_40px_-34px_rgba(0,91,143,0.55)] ring-1 ring-[#eaf1f5]">
+                            <h2 class="text-base font-semibold text-[#17212b]">
+                                Гинекология
+                            </h2>
+                            <ul class="mt-4 space-y-2 text-sm leading-6 text-[#607789]">
+                                <li>Консультация врача</li>
+                                <li>Планирование беременности</li>
+                                <li>УЗИ малого таза</li>
+                                <li>Кольпоскопия</li>
+                                <li>Ведение беременности</li>
+                                <li>Лечение воспалений</li>
+                            </ul>
+                            <a href="tel:84959260603"
+                                class="mt-auto inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                Все услуги
+                            </a>
+                        </article>
+
+                        <article
+                            class="flex h-full flex-col rounded-[8px] bg-white px-5 py-5 shadow-[0_18px_40px_-34px_rgba(0,91,143,0.55)] ring-1 ring-[#eaf1f5]">
+                            <h2 class="text-base font-semibold text-[#17212b]">
+                                Диагностика
+                            </h2>
+                            <ul class="mt-4 space-y-2 text-sm leading-6 text-[#607789]">
+                                <li>МРТ</li>
+                                <li>КТ</li>
+                                <li>УЗИ</li>
+                                <li>Рентген</li>
+                                <li>Анализы</li>
+                                <li>ЭКГ</li>
+                            </ul>
+                            <a href="tel:84959260603"
+                                class="mt-auto inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                Все услуги
+                            </a>
+                        </article>
+
+                        <article
+                            class="flex h-full flex-col rounded-[8px] bg-white px-5 py-5 shadow-[0_18px_40px_-34px_rgba(0,91,143,0.55)] ring-1 ring-[#eaf1f5]">
+                            <h2 class="text-base font-semibold text-[#17212b]">
+                                Врачи
+                            </h2>
+                            <ul class="mt-4 space-y-2 text-sm leading-6 text-[#607789]">
+                                <li>Терапевт</li>
+                                <li>Невролог</li>
+                                <li>Гинеколог</li>
+                                <li>Кардиолог</li>
+                                <li>Эндокринолог</li>
+                                <li>Уролог</li>
+                            </ul>
+                            <a href="tel:84959260603"
+                                class="mt-auto inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                Все услуги
+                            </a>
+                        </article>
+
+                        <article
+                            class="flex h-full flex-col rounded-[8px] bg-white px-5 py-5 shadow-[0_18px_40px_-34px_rgba(0,91,143,0.55)] ring-1 ring-[#eaf1f5]">
+                            <h2 class="text-base font-semibold text-[#17212b]">
+                                Детство
+                            </h2>
+                            <ul class="mt-4 space-y-2 text-sm leading-6 text-[#607789]">
+                                <li>Педиатр</li>
+                                <li>Детский невролог</li>
+                                <li>Детское УЗИ</li>
+                                <li>Прививки</li>
+                                <li>Анализы для детей</li>
+                                <li>Справки и осмотры</li>
+                            </ul>
+                            <a href="tel:84959260603"
+                                class="mt-auto inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                Все услуги
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="appointment-primary" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div
+                        class="overflow-hidden rounded-[10px] bg-gradient-to-r from-[#08b9d0] via-[#079dca] to-[#007fbe] px-7 py-8 text-white shadow-[0_26px_60px_-36px_rgba(0,91,143,0.75)] lg:px-8 lg:py-9">
+                        <div class="grid gap-8 lg:grid-cols-[1.65fr_0.9fr] lg:items-start">
+                            <div>
+                                <h2 class="text-[34px] font-semibold leading-none tracking-tight">
+                                    Записаться на приём
+                                </h2>
+
+                                <form class="mt-8 grid gap-4 md:grid-cols-2" action="#" method="get">
+                                    <label class="sr-only" for="direction-primary">Выберите направление</label>
+                                    <div class="relative">
+                                        <select id="direction-primary" name="direction"
+                                            class="h-12 w-full appearance-none rounded-[4px] border border-white/20 bg-white px-4 pr-10 text-sm text-[#1b2a39] outline-none transition focus:border-[#005b8f]">
+                                            <option>Выберите направление</option>
+                                            <option>Гинекология</option>
+                                            <option>Диагностика</option>
+                                            <option>Терапия</option>
+                                            <option>Педиатрия</option>
+                                        </select>
+                                        <span
+                                            class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-[#607789]">▼</span>
+                                    </div>
+
+                                    <label class="sr-only" for="date-primary">Выберите дату</label>
+                                    <input id="date-primary" name="date" type="text" placeholder="Выберите дату"
+                                        class="h-12 w-full rounded-[4px] border border-white/20 bg-white px-4 text-sm text-[#1b2a39] outline-none transition placeholder:text-[#7c91a2] focus:border-[#005b8f]">
+
+                                    <label class="sr-only" for="doctor-primary">Выберите врача</label>
+                                    <div class="relative">
+                                        <select id="doctor-primary" name="doctor"
+                                            class="h-12 w-full appearance-none rounded-[4px] border border-white/20 bg-white px-4 pr-10 text-sm text-[#1b2a39] outline-none transition focus:border-[#005b8f]">
+                                            <option>Выберите врача</option>
+                                            <option>Крятов Андрей</option>
+                                            <option>Савина Наталья</option>
+                                            <option>Николаева Оксана</option>
+                                        </select>
+                                        <span
+                                            class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-[#607789]">▼</span>
+                                    </div>
+
+                                    <label class="sr-only" for="time-primary">Выберите время</label>
+                                    <input id="time-primary" name="time" type="text" placeholder="Выберите время"
+                                        class="h-12 w-full rounded-[4px] border border-white/20 bg-white px-4 text-sm text-[#1b2a39] outline-none transition placeholder:text-[#7c91a2] focus:border-[#005b8f]">
+                                </form>
+                            </div>
+
+                            <div class="lg:pt-2">
+                                <p class="max-w-[250px] text-sm leading-6 text-white/85">
+                                    Оставьте заявку и мы свяжемся с вами, чтобы уточнить дату, время и специалиста.
+                                </p>
+
+                                <button type="button"
+                                    class="mt-6 inline-flex h-12 w-full items-center justify-center rounded-[4px] bg-[#16c7c8] px-6 text-sm font-semibold text-white transition hover:bg-[#10b6b7]">
+                                    Отправить заявку
+                                </button>
+
+                                <label class="mt-5 flex items-start gap-3 text-xs leading-5 text-white/85">
+                                    <input type="checkbox" checked
+                                        class="mt-1 h-4 w-4 rounded border border-white/30 accent-white">
+                                    <span>
+                                        Я даю согласие на обработку своих персональных данных.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-center" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="grid items-end gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:gap-10">
+                        <div class="max-w-[450px] pt-2">
+                            <h2
+                                class="max-w-[340px] text-[32px] font-semibold leading-[1.08] tracking-tight text-[#17212b] lg:text-[40px]">
+                                Немного о нашем медицинском центре
+                            </h2>
+                            <div class="mt-5 space-y-3 text-sm leading-6 text-[#5f7383]">
+                                <p>
+                                    Мы создаем комфортное пространство, где можно быстро пройти диагностику, получить
+                                    консультацию специалиста и подобрать дальнейший план лечения без лишних сложностей.
+                                </p>
+                                <p>
+                                    В центре работают врачи разных направлений, современная диагностическая база и
+                                    удобная система записи на приём. Наша задача — сделать медицинскую помощь понятной,
+                                    доступной и спокойной для каждого пациента.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex justify-center lg:justify-end">
+                            <div class="absolute bottom-5 right-12 hidden h-56 w-56 rounded-full bg-[#dff5fb] lg:block">
+                            </div>
+                            <div
+                                class="absolute bottom-0 right-0 hidden h-44 w-[320px] rounded-[42px] bg-[#eef8fc] lg:block">
+                            </div>
+                            <img src="./IMage/behruz/doctor.svg" alt="Врач медицинского центра"
+                                class="relative z-10 w-full max-w-[430px] lg:max-w-[470px]">
+                        </div>
+                    </div>
+
+                    <div class="mt-3 rounded-[10px] bg-[#eef5f8] px-5 py-6 lg:px-8 lg:py-7">
+                        <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4 xl:gap-5">
+                            <article class="space-y-2">
+                                <div class="relative h-7 w-7">
+                                    <span
+                                        class="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 rounded-full bg-[#14c7c8]"></span>
+                                    <span
+                                        class="absolute left-0 top-1/2 h-2 w-full -translate-y-1/2 rounded-full bg-[#14c7c8]"></span>
+                                </div>
+                                <p class="text-[28px] font-semibold leading-none text-[#005b8f]">+10</p>
+                                <p class="max-w-[180px] text-[13px] leading-5 text-[#607789]">
+                                    лет заботы о здоровье пациентов
+                                </p>
+                            </article>
+
+                            <article class="space-y-2">
+                                <div class="relative h-7 w-7">
+                                    <span
+                                        class="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 rounded-full bg-[#14c7c8]"></span>
+                                    <span
+                                        class="absolute left-0 top-1/2 h-2 w-full -translate-y-1/2 rounded-full bg-[#14c7c8]"></span>
+                                </div>
+                                <p class="text-[28px] font-semibold leading-none text-[#005b8f]">150</p>
+                                <p class="max-w-[180px] text-[13px] leading-5 text-[#607789]">
+                                    квалифицированных специалистов в штате
+                                </p>
+                            </article>
+
+                            <article class="space-y-2">
+                                <div class="relative h-7 w-7">
+                                    <span
+                                        class="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 rounded-full bg-[#14c7c8]"></span>
+                                    <span
+                                        class="absolute left-0 top-1/2 h-2 w-full -translate-y-1/2 rounded-full bg-[#14c7c8]"></span>
+                                </div>
+                                <p class="text-[28px] font-semibold leading-none text-[#005b8f]">3 000</p>
+                                <p class="max-w-[210px] text-[13px] leading-5 text-[#607789]">
+                                    медицинских услуг по основным направлениям
+                                </p>
+                            </article>
+
+                            <article class="space-y-2">
+                                <div class="relative h-7 w-7">
+                                    <span
+                                        class="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 rounded-full bg-[#14c7c8]"></span>
+                                    <span
+                                        class="absolute left-0 top-1/2 h-2 w-full -translate-y-1/2 rounded-full bg-[#14c7c8]"></span>
+                                </div>
+                                <p class="text-[28px] font-semibold leading-none text-[#005b8f]">День в день</p>
+                                <p class="max-w-[220px] text-[13px] leading-5 text-[#607789]">
+                                    приём врача нужной специальности в день обращения
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="popular-services" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="mb-7 flex items-center justify-between gap-4">
+                        <h2 class="text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                            Популярные услуги
+                        </h2>
+
+                        <div class="flex items-center gap-2">
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#eef5f8] text-[#7aa2bf] transition hover:bg-[#dcecf5] hover:text-[#005b8f]"
+                                aria-label="Предыдущие услуги">
+                                <span class="text-lg leading-none">&#8249;</span>
+                            </button>
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#0a6fa4] text-white transition hover:bg-[#005b8f]"
+                                aria-label="Следующие услуги">
+                                <span class="text-lg leading-none">&#8250;</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/behruz/image.jpg" alt="Магнитно-резонансная томография"
+                                    class="h-[190px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="min-h-[48px] text-[15px] font-medium leading-5 text-[#17212b]">
+                                    Магнитно-резонансная томография (МРТ)
+                                </h3>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/behruz/image-1.jpg" alt="Гастроскопия"
+                                    class="h-[190px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="min-h-[48px] text-[15px] font-medium leading-5 text-[#17212b]">
+                                    Гастроскопия
+                                </h3>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/behruz/image-2.jpg" alt="Прием гинеколога"
+                                    class="h-[190px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="min-h-[48px] text-[15px] font-medium leading-5 text-[#17212b]">
+                                    Прием гинеколога
+                                </h3>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/behruz/image-3.jpg" alt="Лабораторная диагностика"
+                                    class="h-[190px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="min-h-[48px] text-[15px] font-medium leading-5 text-[#17212b]">
+                                    Лабораторная диагностика
+                                </h3>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="promo" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <h2 class="mb-7 text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                        Акции
+                    </h2>
+
+                    <div class="grid gap-6 lg:grid-cols-2">
+                        <article
+                            class="relative overflow-hidden rounded-[10px] bg-[linear-gradient(135deg,#11c6d0_0%,#009fd3_100%)] p-6 min-h-[220px]">
+                            <div class="absolute inset-y-0 right-0 flex w-[68%] items-center justify-end">
+                                <img src="./IMage/behruz/discount.png" alt="Процедура косметологии"
+                                    class="h-full w-full object-cover object-center">
+                            </div>
+                            <div class="relative z-10 max-w-[210px]">
+                                <p class="text-sm font-semibold uppercase tracking-[0.16em] text-white/80">
+                                    Специальное предложение
+                                </p>
+                                <h3 class="mt-3 text-[28px] font-semibold leading-tight text-white">
+                                    Скидки на популярные процедуры
+                                </h3>
+                                <p class="mt-3 text-sm leading-6 text-white/85">
+                                    Узнайте о доступных акциях и выберите удобное время для записи.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article
+                            class="relative overflow-hidden rounded-[10px] bg-[linear-gradient(135deg,#1abfd2_0%,#018dc5_100%)] p-6 min-h-[220px]">
+                            <div class="absolute inset-y-0 right-0 flex w-[62%] items-center justify-end">
+                                <img src="./IMage/behruz/discount2.png" alt="Скидка на процедуру"
+                                    class="h-full w-full object-cover object-center">
+                            </div>
+                            <div class="relative z-10 max-w-[220px]">
+                                <span
+                                    class="inline-flex rounded-full bg-white/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                                    До конца месяца
+                                </span>
+                                <p class="mt-6 text-[52px] font-semibold leading-none text-white">
+                                    -20%
+                                </p>
+                                <p class="mt-3 text-base leading-6 text-white/90">
+                                    На первичный приём и косметологические процедуры
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="doctors" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="mb-7 flex items-center justify-between gap-4">
+                        <h2 class="text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                            Врачи медицинского центра
+                        </h2>
+
+                        <div class="flex items-center gap-2">
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#eef5f8] text-[#7aa2bf] transition hover:bg-[#dcecf5] hover:text-[#005b8f]"
+                                aria-label="Предыдущие врачи">
+                                <span class="text-lg leading-none">&#8249;</span>
+                            </button>
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#0a6fa4] text-white transition hover:bg-[#005b8f]"
+                                aria-label="Следующие врачи">
+                                <span class="text-lg leading-none">&#8250;</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/abdullo/photo.jpg" alt="Крятов Андрей"
+                                    class="h-[278px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="text-[15px] font-semibold leading-5 text-[#0a6fa4]">
+                                    Крятов Андрей
+                                </h3>
+                                <p class="mt-1 min-h-[38px] text-xs leading-4 text-[#607789]">
+                                    Главный врач, уролог, андролог
+                                </p>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/abdullo/photo-1.jpg" alt="Савина Наталья"
+                                    class="h-[278px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="text-[15px] font-semibold leading-5 text-[#0a6fa4]">
+                                    Савина Наталья
+                                </h3>
+                                <p class="mt-1 min-h-[38px] text-xs leading-4 text-[#607789]">
+                                    Врач-невролог
+                                </p>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/abdullo/photo-2.jpg" alt="Зотова Гюзель"
+                                    class="h-[278px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="text-[15px] font-semibold leading-5 text-[#0a6fa4]">
+                                    Зотова Гюзель
+                                </h3>
+                                <p class="mt-1 min-h-[38px] text-xs leading-4 text-[#607789]">
+                                    Врач-терапевт
+                                </p>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="group">
+                            <div class="overflow-hidden rounded-[8px] bg-[#ecf5f9]">
+                                <img src="./IMage/abdullo/photo-3.jpg" alt="Николаева Оксана"
+                                    class="h-[278px] w-full object-cover transition duration-300 group-hover:scale-[1.03]">
+                            </div>
+                            <div class="px-1 pt-4">
+                                <h3 class="text-[15px] font-semibold leading-5 text-[#0a6fa4]">
+                                    Николаева Оксана
+                                </h3>
+                                <p class="mt-1 min-h-[38px] text-xs leading-4 text-[#607789]">
+                                    Врач-терапевт
+                                </p>
+                                <a href="tel:84959260603"
+                                    class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#005b8f] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#00456c]">
+                                    Записаться
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reviews" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="mb-7 flex items-center justify-between gap-4">
+                        <h2 class="text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                            Отзывы пациентов
+                        </h2>
+
+                        <div class="flex items-center gap-2">
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#eef5f8] text-[#7aa2bf] transition hover:bg-[#dcecf5] hover:text-[#005b8f]"
+                                aria-label="Предыдущие отзывы">
+                                <span class="text-lg leading-none">&#8249;</span>
+                            </button>
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#0a6fa4] text-white transition hover:bg-[#005b8f]"
+                                aria-label="Следующие отзывы">
+                                <span class="text-lg leading-none">&#8250;</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid gap-10 lg:grid-cols-2 lg:gap-14">
+                        <article class="border-b border-[#edf2f6] pb-6">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="text-sm font-semibold text-[#17212b]">
+                                    Савина Татьяна
+                                </h3>
+                                <p class="text-xs text-[#607789]">
+                                    10 марта 2022
+                                </p>
+                            </div>
+
+                            <div class="mt-3 flex items-center gap-1 text-[18px] leading-none text-[#f4a11a]">
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                            </div>
+
+                            <p class="mt-5 text-sm leading-7 text-[#5f7383]">
+                                Почти 3 года наблюдаюсь в центре и всегда остаюсь довольна уровнем сервиса. Вежливый
+                                персонал, понятные объяснения врача, аккуратное сопровождение на каждом этапе и
+                                действительно комфортная атмосфера.
+                            </p>
+
+                            <a href="./index.html#reviews"
+                                class="mt-5 inline-flex items-center rounded-[4px] border border-[#dbe7ef] px-4 py-2 text-sm font-medium text-[#0a6fa4] transition hover:border-[#0a6fa4] hover:bg-[#f5fbff]">
+                                Подробнее
+                            </a>
+
+                            <p class="mt-5 text-xs text-[#7b90a1]">
+                                Врач: Савина Татьяна Владимировна
+                            </p>
+                        </article>
+
+                        <article class="border-b border-[#edf2f6] pb-6">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="text-sm font-semibold text-[#17212b]">
+                                    Тюнинова Яна
+                                </h3>
+                                <p class="text-xs text-[#607789]">
+                                    24 мая 2023
+                                </p>
+                            </div>
+
+                            <div class="mt-3 flex items-center gap-1 text-[18px] leading-none text-[#f4a11a]">
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                                <span>&starf;</span>
+                            </div>
+
+                            <p class="mt-5 text-sm leading-7 text-[#5f7383]">
+                                Огромное спасибо врачу за внимательное обследование и подробные рекомендации. Приём
+                                прошёл спокойно, без спешки, а после визита осталось ощущение уверенности и полного
+                                понимания дальнейших действий.
+                            </p>
+
+                            <a href="./index.html#reviews"
+                                class="mt-5 inline-flex items-center rounded-[4px] border border-[#dbe7ef] px-4 py-2 text-sm font-medium text-[#0a6fa4] transition hover:border-[#0a6fa4] hover:bg-[#f5fbff]">
+                                Подробнее
+                            </a>
+
+                            <p class="mt-5 text-xs text-[#7b90a1]">
+                                Врач: Крятов Андрей Константинович
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="equipment" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="mb-7 flex items-center justify-between gap-4">
+                        <h2 class="text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                            Технологии и оборудование
+                        </h2>
+
+                        <div class="flex items-center gap-2">
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#eef5f8] text-[#7aa2bf] transition hover:bg-[#dcecf5] hover:text-[#005b8f]"
+                                aria-label="Предыдущее оборудование">
+                                <span class="text-lg leading-none">&#8249;</span>
+                            </button>
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#0a6fa4] text-white transition hover:bg-[#005b8f]"
+                                aria-label="Следующее оборудование">
+                                <span class="text-lg leading-none">&#8250;</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                        <article class="overflow-hidden rounded-[8px] bg-[#eef5f8]">
+                            <div class="overflow-hidden bg-[#6fd8de]">
+                                <img src="./IMage/behruz/УЗИ Aplio 400.jpg" alt="УЗИ Aplio 400"
+                                    class="h-[180px] w-full object-cover">
+                            </div>
+                            <div class="px-5 py-5">
+                                <h3 class="text-[20px] font-semibold leading-tight text-[#17212b]">
+                                    УЗИ Aplio 400
+                                </h3>
+                                <p class="mt-3 text-sm leading-6 text-[#5f7383]">
+                                    Современная ультразвуковая система для точной визуализации и комфортной диагностики
+                                    в разных направлениях.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="overflow-hidden rounded-[8px] bg-[#eef5f8]">
+                            <div class="overflow-hidden bg-[#6fd8de]">
+                                <img src="./IMage/behruz/Колоноскоп Olympus cF-Q150l.jpg" alt="Olympus cF-Q150l"
+                                    class="h-[180px] w-full object-cover">
+                            </div>
+                            <div class="px-5 py-5">
+                                <h3 class="text-[20px] font-semibold leading-tight text-[#17212b]">
+                                    Olympus cF-Q150l
+                                </h3>
+                                <p class="mt-3 text-sm leading-6 text-[#5f7383]">
+                                    Эндоскопическое оборудование для качественного обследования с высокой детализацией
+                                    изображения и точной диагностикой.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="overflow-hidden rounded-[8px] bg-[#eef5f8]">
+                            <div class="overflow-hidden bg-[#6fd8de]">
+                                <img src="./IMage/behruz/ПроГраф 5000.jpg" alt="Про граф 5000"
+                                    class="h-[180px] w-full object-cover">
+                            </div>
+                            <div class="px-5 py-5">
+                                <h3 class="text-[20px] font-semibold leading-tight text-[#17212b]">
+                                    Про граф 5000
+                                </h3>
+                                <p class="mt-3 text-sm leading-6 text-[#5f7383]">
+                                    Надёжное оборудование для диагностических исследований, которое помогает врачу
+                                    быстрее получить точные данные.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="pb-12 lg:pb-16">
+                <div class="bg-[linear-gradient(135deg,#0898cf_0%,#006fa9_100%)] py-10 text-white lg:py-12">
+                    <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                        <div class="mb-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                            <h2 class="text-[34px] font-semibold leading-none tracking-tight">
+                                Блог от наших специалистов
+                            </h2>
+                            <a href="./index.html#blog"
+                                class="inline-flex items-center justify-center rounded-full bg-[#16c7c8] px-5 py-2 text-sm font-medium text-white transition hover:bg-[#10b6b7]">
+                                Читать все
+                            </a>
+                        </div>
+
+                        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                            <article class="flex h-full flex-col rounded-[8px] bg-white/7 p-3 backdrop-blur-sm">
+                                <img src="./IMage/behruz/blog.jpg" alt="Блог медицинского центра"
+                                    class="h-[150px] w-full rounded-[6px] object-cover">
+                                <div class="flex flex-1 flex-col px-1 pb-1 pt-4">
+                                    <h3 class="text-[15px] font-medium leading-5 text-white">
+                                        Как сохранить зрение и почему важно проходить осмотр вовремя
+                                    </h3>
+                                    <p class="mt-3 text-sm leading-6 text-white/80">
+                                        Разбираем первые симптомы, на которые стоит обратить внимание, и когда лучше
+                                        записаться к врачу.
+                                    </p>
+                                    <div class="mt-auto flex items-center gap-3 pt-4">
+                                        <img src="./IMage/behruz/avatar.svg" alt=""
+                                            class="h-9 w-9 shrink-0 rounded-full bg-white">
+                                        <div class="min-w-0 text-xs leading-5 text-white/80">
+                                            <p class="font-medium text-white">Анна Сергеева</p>
+                                            <p>Врач-офтальмолог</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="flex h-full flex-col rounded-[8px] bg-white/7 p-3 backdrop-blur-sm">
+                                <img src="./IMage/behruz/blog.jpg" alt="Блог медицинского центра"
+                                    class="h-[150px] w-full rounded-[6px] object-cover">
+                                <div class="flex flex-1 flex-col px-1 pb-1 pt-4">
+                                    <h3 class="text-[15px] font-medium leading-5 text-white">
+                                        Какие обследования стоит проходить регулярно после 40 лет
+                                    </h3>
+                                    <p class="mt-3 text-sm leading-6 text-white/80">
+                                        Составили короткий список базовых исследований, которые помогают следить за
+                                        здоровьем без лишнего стресса.
+                                    </p>
+                                    <div class="mt-auto flex items-center gap-3 pt-4">
+                                        <img src="./IMage/behruz/avatar.svg" alt=""
+                                            class="h-9 w-9 shrink-0 rounded-full bg-white">
+                                        <div class="min-w-0 text-xs leading-5 text-white/80">
+                                            <p class="font-medium text-white">Ирина Климова</p>
+                                            <p>Врач-терапевт</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="flex h-full flex-col rounded-[8px] bg-white/7 p-3 backdrop-blur-sm">
+                                <img src="./IMage/behruz/blog.jpg" alt="Блог медицинского центра"
+                                    class="h-[150px] w-full rounded-[6px] object-cover">
+                                <div class="flex flex-1 flex-col px-1 pb-1 pt-4">
+                                    <h3 class="text-[15px] font-medium leading-5 text-white">
+                                        Почему важно не откладывать консультацию специалиста
+                                    </h3>
+                                    <p class="mt-3 text-sm leading-6 text-white/80">
+                                        Объясняем, как ранняя диагностика помогает избежать сложного лечения и сохранить
+                                        качество жизни.
+                                    </p>
+                                    <div class="mt-auto flex items-center gap-3 pt-4">
+                                        <img src="./IMage/behruz/avatar.svg" alt=""
+                                            class="h-9 w-9 shrink-0 rounded-full bg-white">
+                                        <div class="min-w-0 text-xs leading-5 text-white/80">
+                                            <p class="font-medium text-white">Мария Орлова</p>
+                                            <p>Врач-диагност</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="flex h-full flex-col rounded-[8px] bg-white/7 p-3 backdrop-blur-sm">
+                                <img src="./IMage/behruz/blog.jpg" alt="Блог медицинского центра"
+                                    class="h-[150px] w-full rounded-[6px] object-cover">
+                                <div class="flex flex-1 flex-col px-1 pb-1 pt-4">
+                                    <h3 class="text-[15px] font-medium leading-5 text-white">
+                                        Как подготовиться к диагностике, чтобы получить точный результат
+                                    </h3>
+                                    <p class="mt-3 text-sm leading-6 text-white/80">
+                                        Рассказываем, что важно учесть перед приёмом и как простая подготовка влияет на
+                                        итог обследования.
+                                    </p>
+                                    <div class="mt-auto flex items-center gap-3 pt-4">
+                                        <img src="./IMage/behruz/avatar.svg" alt=""
+                                            class="h-9 w-9 shrink-0 rounded-full bg-white">
+                                        <div class="min-w-0 text-xs leading-5 text-white/80">
+                                            <p class="font-medium text-white">Ольга Петрова</p>
+                                            <p>Врач функциональной диагностики</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partners" class="pb-12 pt-12 lg:pb-16 lg:pt-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <h2 class="text-center text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                        Наши партнеры
+                    </h2>
+
+                    <div class="mt-8 px-5 py-6 lg:px-8 lg:py-7">
+                        <div
+                            class="grid grid-cols-2 items-center gap-x-10 gap-y-9 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_1.jpg" alt="Партнер 1"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_2.jpg" alt="Партнер 2"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_3.jpg" alt="Партнер 3"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_4.jpg" alt="Партнер 4"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_5.jpg" alt="Партнер 5"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_6.jpg" alt="Партнер 6"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_7.jpg" alt="Партнер 7"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_8.jpg" alt="Партнер 8"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_9.jpg" alt="Партнер 9"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_10.jpg" alt="Партнер 10"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_11.jpg" alt="Партнер 11"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_12.jpg" alt="Партнер 12"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_13.jpg" alt="Партнер 13"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                            <div class="flex min-h-[96px] items-center justify-center px-4 py-3">
+                                <img src="./IMage/behruz/logo_14.jpg" alt="Партнер 14"
+                                    class="max-h-20 w-auto max-w-full object-contain opacity-90 lg:max-h-24">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="licenses" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="mb-7 flex items-center justify-between gap-4">
+                        <h2 class="text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                            Лицензии и сертификаты
+                        </h2>
+
+                        <div class="flex items-center gap-2">
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#eef5f8] text-[#7aa2bf] transition hover:bg-[#dcecf5] hover:text-[#005b8f]"
+                                aria-label="Предыдущие сертификаты">
+                                <span class="text-lg leading-none">&#8249;</span>
+                            </button>
+                            <button type="button"
+                                class="flex h-9 w-9 items-center justify-center rounded-full bg-[#0a6fa4] text-white transition hover:bg-[#005b8f]"
+                                aria-label="Следующие сертификаты">
+                                <span class="text-lg leading-none">&#8250;</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                        <article class="group">
+                            <div
+                                class="flex min-h-[318px] items-center justify-center rounded-[8px] border border-[#edf2f6] bg-white p-4 shadow-[0_18px_40px_-38px_rgba(0,91,143,0.4)]">
+                                <img src="./IMage/behruz/certificate1.jpg" alt="Сертификат соответствия"
+                                    class="max-h-[286px] w-auto object-contain transition duration-300 group-hover:scale-[1.02]">
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-[#5f7383]">
+                                Сертификат соответствия
+                            </p>
+                        </article>
+
+                        <article class="group">
+                            <div
+                                class="flex min-h-[318px] items-center justify-center rounded-[8px] border border-[#edf2f6] bg-white p-4 shadow-[0_18px_40px_-38px_rgba(0,91,143,0.4)]">
+                                <img src="./IMage/behruz/certificate2.jpg" alt="Лицензия на медицинскую деятельность"
+                                    class="max-h-[286px] w-auto object-contain transition duration-300 group-hover:scale-[1.02]">
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-[#5f7383]">
+                                Лицензия на медицинскую деятельность
+                            </p>
+                        </article>
+
+                        <article class="group">
+                            <div
+                                class="flex min-h-[318px] items-center justify-center rounded-[8px] border border-[#edf2f6] bg-white p-4 shadow-[0_18px_40px_-38px_rgba(0,91,143,0.4)]">
+                                <img src="./IMage/behruz/certificate3.jpg" alt="Приложение к лицензии"
+                                    class="max-h-[286px] w-auto object-contain transition duration-300 group-hover:scale-[1.02]">
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-[#5f7383]">
+                                Приложение к лицензии
+                            </p>
+                        </article>
+
+                        <article class="group">
+                            <div
+                                class="flex min-h-[318px] items-center justify-center rounded-[8px] border border-[#edf2f6] bg-white p-4 shadow-[0_18px_40px_-38px_rgba(0,91,143,0.4)]">
+                                <img src="./IMage/behruz/certificate4.jpg" alt="Лицензия на осуществление деятельности"
+                                    class="max-h-[286px] w-auto object-contain transition duration-300 group-hover:scale-[1.02]">
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-[#5f7383]">
+                                Лицензия на осуществление деятельности
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <h2 class="mb-7 text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+                        Как нас найти
+                    </h2>
+
+                    <div class="overflow-hidden rounded-[10px] bg-white shadow-[0_24px_60px_-42px_rgba(0,91,143,0.45)]">
+                        <img src="./IMage/behruz/map.png" alt="Карта проезда к медицинскому центру"
+                            class="h-[320px] w-full object-cover md:h-[420px]">
+                    </div>
+                </div>
+            </section>
+
+            <section id="appointment-secondary" class="pb-12 lg:pb-16">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div
+                        class="overflow-hidden rounded-[10px] bg-gradient-to-r from-[#08b9d0] via-[#079dca] to-[#007fbe] px-7 py-8 text-white shadow-[0_26px_60px_-36px_rgba(0,91,143,0.75)] lg:px-8 lg:py-9">
+                        <div class="grid gap-8 lg:grid-cols-[1.65fr_0.9fr] lg:items-start">
+                            <div>
+                                <h2 class="text-[34px] font-semibold leading-none tracking-tight">
+                                    Записаться на приём
+                                </h2>
+
+                                <form class="mt-8 grid gap-4 md:grid-cols-2" action="#" method="get">
+                                    <label class="sr-only" for="direction-secondary">Выберите направление</label>
+                                    <div class="relative">
+                                        <select id="direction-secondary" name="direction-secondary"
+                                            class="h-12 w-full appearance-none rounded-[4px] border border-white/20 bg-white px-4 pr-10 text-sm text-[#1b2a39] outline-none transition focus:border-[#005b8f]">
+                                            <option>Выберите направление</option>
+                                            <option>Гинекология</option>
+                                            <option>Диагностика</option>
+                                            <option>Терапия</option>
+                                        </select>
+                                        <span
+                                            class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-[#607789]">▼</span>
+                                    </div>
+
+                                    <label class="sr-only" for="date-secondary">Выберите дату</label>
+                                    <input id="date-secondary" name="date-secondary" type="text"
+                                        placeholder="Выберите дату"
+                                        class="h-12 w-full rounded-[4px] border border-white/20 bg-white px-4 text-sm text-[#1b2a39] outline-none transition placeholder:text-[#7c91a2] focus:border-[#005b8f]">
+
+                                    <label class="sr-only" for="doctor-secondary">Выберите врача</label>
+                                    <div class="relative">
+                                        <select id="doctor-secondary" name="doctor-secondary"
+                                            class="h-12 w-full appearance-none rounded-[4px] border border-white/20 bg-white px-4 pr-10 text-sm text-[#1b2a39] outline-none transition focus:border-[#005b8f]">
+                                            <option>Выберите врача</option>
+                                            <option>Крятов Андрей</option>
+                                            <option>Савина Наталья</option>
+                                            <option>Николаева Оксана</option>
+                                        </select>
+                                        <span
+                                            class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-[#607789]">▼</span>
+                                    </div>
+
+                                    <label class="sr-only" for="time-secondary">Выберите время</label>
+                                    <input id="time-secondary" name="time-secondary" type="text"
+                                        placeholder="Выберите время"
+                                        class="h-12 w-full rounded-[4px] border border-white/20 bg-white px-4 text-sm text-[#1b2a39] outline-none transition placeholder:text-[#7c91a2] focus:border-[#005b8f]">
+                                </form>
+                            </div>
+
+                            <div class="lg:pt-2">
+                                <p class="max-w-[250px] text-sm leading-6 text-white/85">
+                                    Оставьте заявку и мы свяжемся с вами, чтобы подобрать удобную дату и время приёма.
+                                </p>
+
+                                <button type="button"
+                                    class="mt-6 inline-flex h-12 w-full items-center justify-center rounded-[4px] bg-[#16c7c8] px-6 text-sm font-semibold text-white transition hover:bg-[#10b6b7]">
+                                    Отправить заявку
+                                </button>
+
+                                <label class="mt-5 flex items-start gap-3 text-xs leading-5 text-white/85">
+                                    <input type="checkbox" checked
+                                        class="mt-1 h-4 w-4 rounded border border-white/30 accent-white">
+                                    <span>
+                                        Я даю согласие на обработку своих персональных данных.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="accessibility" class="border-t border-[#e5edf3] bg-white">
+                <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+                    <div class="flex flex-col gap-8 py-8 lg:py-10">
+                        <div class="flex flex-col gap-8 xl:flex-row xl:items-start xl:justify-between">
+                            <div class="max-w-[250px]">
+                                <a href="./index.html" class="inline-flex">
+                                    <img src="./IMage/munis/logo.svg" alt="Городской медицинский центр"
+                                        class="h-12 w-auto">
+                                </a>
+                                <p class="mt-4 text-sm leading-6 text-[#607789]">
+                                    Современный медицинский центр с комфортным сервисом, опытными врачами и удобной
+                                    записью на приём.
+                                </p>
+                                <p class="mt-4 text-xs leading-5 text-[#8ba0b0]">
+                                    © 2011-2026 Городской медицинский центр.
+                                    <br>
+                                    Все права защищены.
+                                </p>
+                            </div>
+
+                            <div class="grid flex-1 gap-8 md:grid-cols-2 xl:grid-cols-[1.05fr_1fr_1fr_240px]">
+                                <nav class="flex flex-col gap-3 text-sm font-medium text-[#1f3142]">
+                                    <a href="./index.html#services"
+                                        class="transition hover:text-[#005b8f]">Направления</a>
+                                    <a href="./index.html#popular-services"
+                                        class="transition hover:text-[#005b8f]">Услуги</a>
+                                    <a href="./index.html#doctors" class="transition hover:text-[#005b8f]">Врачи</a>
+                                    <a href="./index.html#reviews" class="transition hover:text-[#005b8f]">Отзывы</a>
+                                    <a href="./index.html#promo" class="transition hover:text-[#005b8f]">Акции</a>
+                                    <a href="./index.html#services" class="transition hover:text-[#005b8f]">Детство</a>
+                                    <a href="./index.html#contacts" class="transition hover:text-[#005b8f]">Контакты</a>
+                                </nav>
+
+                                <div class="space-y-3">
+                                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-[#8ba0b0]">
+                                        Телефоны
+                                    </p>
+                                    <a href="tel:84959260603"
+                                        class="block text-[22px] font-semibold leading-none text-[#005b8f] transition hover:text-[#00456c]">
+                                        8 (495) 926-06-03
+                                    </a>
+                                    <a href="tel:84955980880"
+                                        class="block text-[22px] font-semibold leading-none text-[#005b8f] transition hover:text-[#00456c]">
+                                        8 (495) 598-08-80
+                                    </a>
+                                    <div class="flex flex-wrap items-center gap-4">
+                                        <a href="https://wa.me/74959260603"
+                                            class="inline-flex items-center gap-2 text-sm text-[#25D366] transition hover:opacity-80">
+                                            <img src="./IMage/munis/socialWhatsApp.svg" alt=""
+                                                class="h-[18px] w-[18px]">
+                                            Написать в WhatsApp
+                                        </a>
+                                        <a href="https://vk.com/"
+                                            class="inline-flex items-center gap-2 text-sm text-[#2787f5] transition hover:opacity-80">
+                                            <img src="./IMage/behruz/vk.svg" alt="" class="h-[18px] w-[18px]">
+                                            Мы в VK
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-3 text-sm leading-6 text-[#607789]">
+                                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-[#8ba0b0]">
+                                        Адрес
+                                    </p>
+                                    <p>
+                                        г. Мытищи, ул. Рождественская, д. 7
+                                    </p>
+                                    <p>
+                                        Ежедневно с 9:00 до 21:00
+                                    </p>
+                                    <a href="mailto:info@gormedcentre.ru" class="block transition hover:text-[#005b8f]">
+                                        info@gormedcentre.ru
+                                    </a>
+                                </div>
+
+                                <div class="flex flex-col items-start gap-4">
+                                    <a href="tel:84959260603"
+                                        class="inline-flex min-h-12 items-center justify-center rounded-[4px] bg-[#eef6fb] px-5 py-3 text-sm font-medium text-[#005b8f] transition hover:bg-[#dceaf4]">
+                                        Заказать обратный звонок
+                                    </a>
+                                    <a href="./index.html#hero"
+                                        class="inline-flex items-center gap-2 text-sm text-[#506676] transition hover:text-[#005b8f]">
+                                        <img src="./IMage/munis/iconGlass.svg" alt="" class="h-4 w-4">
+                                        Версия для слабовидящих
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-4 border-t border-[#edf2f6] pt-5 text-xs leading-5 text-[#8ba0b0] lg:flex-row lg:items-center lg:justify-between">
+                            <p class="max-w-[760px]">
+                                Информация, размещенная на сайте, носит справочный характер и не является публичной
+                                офертой. Для уточнения стоимости и условий оказания услуг свяжитесь с администратором
+                                клиники.
+                            </p>
+                            <div class="flex flex-wrap items-center gap-4">
+                                <a href="./index.html#contacts" class="transition hover:text-[#005b8f]">
+                                    Политика конфиденциальности
+                                </a>
+                                <span>
+                                    Разработка и поддержка сайта
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
 </body>
+
 </html>
