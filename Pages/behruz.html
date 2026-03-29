@@ -1,13 +1,297 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GMC Page 1</title>
+  <title>Первичный прием врача-косметолога</title>
+  <link rel="icon" type="image/svg+xml" href="../IMage/abdullo/favicon.svg" />
   <link rel="stylesheet" href="../src/output.css" />
 </head>
-<body class="bg-white text-[#1f2937]">
-  <header class="w-full border-b border-gray-200 bg-white">
+<body class="bg-white font-sans text-[#1c2733] antialiased">
+  <header class="border-b border-[#e5edf3] bg-white">
+    <div class="mx-auto max-w-[1280px] px-4 py-4 lg:px-6">
+      <div class="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-8">
+          <a href="./behruz.html" class="shrink-0">
+            <img
+              src="../IMage/behruz/logo.svg"
+              alt="Городской медицинский центр"
+              class="h-11 w-auto sm:h-12"
+            >
+          </a>
+
+          <div class="grid gap-4 text-[13px] text-[#526779] sm:grid-cols-2 xl:flex xl:items-start xl:gap-8">
+            <div class="space-y-1">
+              <a href="tel:84959260603" class="block text-lg font-semibold text-[#005b8f] transition hover:text-[#003f63]">
+                8 (495) 926-06-03
+              </a>
+              <a href="https://wa.me/74959260603" class="inline-flex items-center gap-2 text-[#25D366] transition hover:opacity-80">
+                <img src="../IMage/behruz/socialWhatsApp.svg" alt="" class="h-[18px] w-[18px]">
+                Whatsapp
+              </a>
+            </div>
+
+            <div class="space-y-1">
+              <a href="mailto:info@gormedcentre.ru" class="block transition hover:text-[#005b8f]">
+                info@gormedcentre.ru
+              </a>
+              <a href="tel:84959260603" class="inline-block border-b border-dotted border-[#9db0be] pb-0.5 text-[#7e93a5] transition hover:border-[#005b8f] hover:text-[#005b8f]">
+                Заказать звонок
+              </a>
+            </div>
+
+            <div class="max-w-[180px] leading-5">
+              г. Мытищи,
+              <br>
+              ул. Рождественская, д. 7
+            </div>
+
+            <div class="leading-5">
+              Ежедневно
+              <br>
+              9:00 до 21:00
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 self-start xl:self-auto">
+          <button
+            type="button"
+            class="flex h-11 w-11 items-center justify-center rounded-md bg-[#16c7c8] transition hover:bg-[#10b6b7]"
+            aria-label="Поиск"
+          >
+            <img src="../IMage/behruz/search.svg" alt="" class="h-5 w-5">
+          </button>
+          <a
+            href="./behruz.html#hero"
+            class="inline-flex items-center justify-center rounded-md bg-[#eef6fb] px-5 py-3 text-sm font-medium text-[#005b8f] transition hover:bg-[#dceaf4]"
+          >
+            Личный кабинет
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-4 flex flex-col gap-4 border-t border-[#eef3f7] pt-4 lg:flex-row lg:items-center lg:justify-between">
+        <nav aria-label="Основная навигация" class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm font-medium text-[#1f3142]">
+          <a href="../index.html" class="transition hover:text-[#005b8f]">Page 1</a>
+          <a href="./munis.html" class="transition hover:text-[#005b8f]">Page 2</a>
+          <a
+            href="./behruz.html"
+            aria-current="page"
+            class="border-b-2 border-[#16c7c8] pb-1 text-[#005b8f]"
+          >
+            Page 3
+          </a>
+          <a href="./abdullo.html" class="transition hover:text-[#005b8f]">Page 4</a>
+          <a href="./behruz.html#prices" class="transition hover:text-[#005b8f]">Стоимость</a>
+          <a href="./behruz.html#services" class="transition hover:text-[#005b8f]">Услуги</a>
+          <a href="./behruz.html#doctors" class="transition hover:text-[#005b8f]">Врачи</a>
+          <a href="./behruz.html#contacts" class="transition hover:text-[#005b8f]">Контакты</a>
+        </nav>
+
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+          <a
+            href="./behruz.html#accessibility"
+            class="inline-flex items-center gap-2 text-sm text-[#506676] transition hover:text-[#005b8f]"
+          >
+            <img src="../IMage/behruz/iconGlass.svg" alt="" class="h-4 w-4">
+            Версия для слабовидящих
+          </a>
+          <a
+            href="tel:84959260603"
+            class="inline-flex items-center justify-center rounded-md bg-[#005b8f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#00456c]"
+          >
+            Запись на приём
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="relative overflow-hidden bg-[#eef4f8]">
+    <div class="absolute inset-y-0 right-0 hidden w-[56%] overflow-hidden rounded-l-[220px] lg:block">
+      <img
+        src="../IMage/behruz/главное фото.png"
+        alt="Первичный прием врача-косметолога"
+        class="h-full w-full object-cover object-center"
+      >
+      <div class="absolute inset-0 bg-white/8"></div>
+    </div>
+    <div class="pointer-events-none absolute inset-y-0 right-[51%] hidden w-28 rounded-r-full bg-white/60 blur-2xl lg:block"></div>
+
+    <div class="mx-auto max-w-[1280px] px-4 py-10 lg:px-6 lg:py-14">
+      <nav aria-label="Хлебные крошки" class="mb-8 flex flex-wrap items-center gap-2 text-sm text-[#7c91a2]">
+        <a href="../index.html" class="transition hover:text-[#005b8f]">Главная</a>
+        <span>/</span>
+        <a href="./behruz.html" class="transition hover:text-[#005b8f]">Направления</a>
+        <span>/</span>
+        <a href="./behruz.html#hero" class="transition hover:text-[#005b8f]">Косметология</a>
+        <span>/</span>
+        <span class="text-[#9db0be]">Первичный приём</span>
+      </nav>
+
+      <div class="relative z-10 max-w-[490px]">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#6b8194]">
+          Косметология
+        </p>
+        <h1 class="mb-6 text-4xl font-semibold leading-tight tracking-tight text-[#121a23] sm:text-5xl">
+          Первичный приём врача-косметолога
+        </h1>
+        <p class="mb-8 text-4xl font-semibold text-[#111827] sm:text-[48px]">
+          2 500 ₽
+        </p>
+        <a
+          href="tel:84959260603"
+          class="inline-flex items-center justify-center rounded-md bg-[#16c7c8] px-8 py-3.5 text-sm font-semibold text-white shadow-[0_20px_40px_-24px_rgba(22,199,200,1)] transition hover:bg-[#10b6b7]"
+        >
+          Записаться
+        </a>
+      </div>
+
+      <div class="mt-10 lg:hidden">
+        <div class="overflow-hidden rounded-[28px] bg-white shadow-[0_20px_50px_-30px_rgba(0,91,143,0.45)]">
+          <img
+            src="../IMage/behruz/главное фото.png"
+            alt="Первичный прием врача-косметолога"
+            class="h-full w-full object-cover"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white pb-7 pt-4 lg:pb-10">
+    <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+      <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <article class="rounded-[6px] bg-[#eef5f8] px-6 py-7">
+          <div class="mb-4 flex h-8 w-8 items-center justify-center">
+            <img src="../IMage/behruz/cross.svg" alt="" class="h-8 w-8">
+          </div>
+          <p class="text-[28px] font-semibold leading-none text-[#005b8f]">+10</p>
+          <p class="mt-3 max-w-[190px] text-sm leading-6 text-[#607789]">
+            лет заботы о вашем здоровье и красоте
+          </p>
+        </article>
+
+        <article class="rounded-[6px] bg-[#eef5f8] px-6 py-7">
+          <div class="mb-4 flex h-8 w-8 items-center justify-center">
+            <img src="../IMage/behruz/cross.svg" alt="" class="h-8 w-8">
+          </div>
+          <p class="text-[28px] font-semibold leading-none text-[#005b8f]">150</p>
+          <p class="mt-3 max-w-[210px] text-sm leading-6 text-[#607789]">
+            квалифицированных специалистов
+          </p>
+        </article>
+
+        <article class="rounded-[6px] bg-[#eef5f8] px-6 py-7">
+          <div class="mb-4 flex h-8 w-8 items-center justify-center">
+            <img src="../IMage/behruz/cross.svg" alt="" class="h-8 w-8">
+          </div>
+          <p class="text-[28px] font-semibold leading-none text-[#005b8f]">3 000</p>
+          <p class="mt-3 max-w-[230px] text-sm leading-6 text-[#607789]">
+            медицинских услуг по всем направлениям
+          </p>
+        </article>
+
+        <article class="rounded-[6px] bg-[#eef5f8] px-6 py-7">
+          <div class="mb-4 flex h-8 w-8 items-center justify-center">
+            <img src="../IMage/behruz/cross.svg" alt="" class="h-8 w-8">
+          </div>
+          <p class="text-[28px] font-semibold leading-none text-[#005b8f]">День в день</p>
+          <p class="mt-3 max-w-[220px] text-sm leading-6 text-[#607789]">
+            приём врача любой специальности в день обращения
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="bg-white pb-12 lg:pb-16">
+    <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+      <div class="grid gap-8 lg:grid-cols-[1.7fr_0.92fr] lg:items-start">
+        <div>
+          <h2 class="mb-7 text-[34px] font-semibold leading-none tracking-tight text-[#17212b]">
+            Стоимость услуг
+          </h2>
+
+          <div class="border-t border-[#e5edf3]">
+            <div class="flex items-center justify-between gap-4 border-b border-[#e5edf3] py-5 text-[15px] text-[#1f3142]">
+              <span>Лечение волос (трихология)</span>
+              <span class="text-[28px] leading-none text-[#7b91a2]">+</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-4 border-b border-[#e5edf3] py-5 text-[15px] text-[#1f3142]">
+              <span>Лазерное омоложение</span>
+              <span class="text-[28px] leading-none text-[#7b91a2]">+</span>
+            </div>
+
+            <div class="border-b border-[#e5edf3] py-5">
+              <div class="flex items-center justify-between gap-4">
+                <span class="text-[15px] font-medium text-[#17212b]">Контурная пластика</span>
+                <span class="text-[28px] leading-none text-[#7b91a2]">−</span>
+              </div>
+
+              <div class="mt-4 space-y-3 border-t border-[#eef3f7] pt-4 text-sm">
+                <div class="grid grid-cols-[72px_1fr_auto] gap-4 text-[#607789]">
+                  <span class="text-[#9db0be]">55.013</span>
+                  <span>Контурная пластика губ</span>
+                  <span class="font-medium text-[#0a6fa4]">1000 ₽</span>
+                </div>
+
+                <div class="grid grid-cols-[72px_1fr_auto] gap-4 text-[#607789]">
+                  <span class="text-[#9db0be]">55.013</span>
+                  <span>Контурная пластика скул</span>
+                  <span class="font-medium text-[#0a6fa4]">1000 ₽</span>
+                </div>
+
+                <div class="grid grid-cols-[72px_1fr_auto] gap-4 text-[#607789]">
+                  <span class="text-[#9db0be]">55.013</span>
+                  <span>Контурная пластика подбородка</span>
+                  <span class="font-medium text-[#0a6fa4]">1000 ₽</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between gap-4 border-b border-[#e5edf3] py-5 text-[15px] text-[#1f3142]">
+              <span>Услуга по косметологии</span>
+              <span class="text-[28px] leading-none text-[#7b91a2]">+</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-4 border-b border-[#e5edf3] py-5 text-[15px] text-[#1f3142]">
+              <span>Услуга по косметологии</span>
+              <span class="text-[28px] leading-none text-[#7b91a2]">+</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-4 border-b border-[#e5edf3] py-5 text-[15px] text-[#1f3142]">
+              <span>Услуга по косметологии</span>
+              <span class="text-[28px] leading-none text-[#7b91a2]">+</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="overflow-hidden rounded-[12px] bg-white shadow-[0_20px_55px_-42px_rgba(0,91,143,0.42)] ring-1 ring-[#e7eff4]">
+          <div class="p-5">
+            <p class="text-[11px] font-medium uppercase tracking-[0.12em] text-[#e27b86]">
+              Акция действует до 30 сентября 2023
+            </p>
+            <h3 class="mt-3 max-w-[240px] text-[22px] font-semibold leading-7 text-[#17212b]">
+              -20% на биоревитализацию Hualuform
+            </h3>
+          </div>
+
+          <div class="overflow-hidden bg-[linear-gradient(135deg,#0ec2cf_0%,#0d8ed0_100%)]">
+            <img
+              src="../IMage/behruz/sticker.png"
+              alt="Акция на биоревитализацию"
+              class="h-full w-full object-cover"
+            >
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <header class="hidden w-full border-b border-gray-200 bg-white">
     <div class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-3">
@@ -75,7 +359,7 @@
       </div>
     </div>
   </header>
-  <section class="mx-auto max-w-[1200px] px-6 py-5 text-sm text-gray-400">
+  <section class="hidden mx-auto max-w-[1200px] px-6 py-5 text-sm text-gray-400">
     <div class="flex flex-wrap items-center gap-2">
       <a href="#" class="hover:text-cyan-500">Главная</a>
       <span>/</span>
@@ -84,7 +368,7 @@
       <span class="text-gray-500">Косметология</span>
     </div>
   </section>
-  <section class="bg-[#edf2f5]">
+  <section class="hidden bg-[#edf2f5]">
     <div class="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-6 py-12 lg:grid-cols-2 lg:py-0">
       <div class="py-8 lg:py-16">
         <p class="mb-4 text-lg font-semibold text-cyan-600">Косметология</p>
@@ -102,7 +386,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-white py-6">
+  <section class="hidden bg-white py-6">
     <div class="mx-auto grid max-w-[1200px] grid-cols-1 gap-6 px-6 md:grid-cols-2 xl:grid-cols-4">
       <div class="bg-[#edf2f5] px-8 py-8">
         <div class="mb-5 text-5xl font-bold leading-none text-cyan-500"><img src="../IMage/behruz/cross.svg" alt=""></div>
@@ -129,7 +413,7 @@
       </div>
     </div>
   </section>
-<section class="bg-white py-12">
+<section class="hidden bg-white py-12">
   <div class="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-[2fr_1fr] gap-10">
     <div>
       <h2 class="text-[42px] font-bold mb-8">Стоимость услуг</h2>
@@ -202,7 +486,93 @@
 
   </div>
 </section>
-<section class="bg-white py-8">
+<section id="appointment-primary" class="bg-white pb-12 lg:pb-14">
+  <div class="mx-auto max-w-[1280px] px-4 lg:px-6">
+    <div class="overflow-hidden rounded-[10px] bg-gradient-to-r from-[#08b9d0] via-[#079dca] to-[#007fbe] px-5 py-7 text-white shadow-[0_26px_60px_-36px_rgba(0,91,143,0.75)] sm:px-8 lg:px-10 lg:py-9">
+      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+        <div>
+          <h2 class="text-[30px] font-semibold leading-tight tracking-tight sm:text-[34px]">
+            Записаться на приём
+          </h2>
+
+          <form class="mt-8 grid gap-4 md:grid-cols-2" action="#" method="get">
+            <label class="sr-only" for="direction-primary">Выберите направление</label>
+            <div class="relative">
+              <select
+                id="direction-primary"
+                name="direction-primary"
+                class="h-[54px] w-full appearance-none rounded-[4px] border border-white/20 bg-white px-5 pr-10 text-[14px] text-[#1b2a39] outline-none transition focus:border-[#005b8f]"
+              >
+                <option>Выберите направление</option>
+                <option>Косметология</option>
+                <option>Диагностика</option>
+                <option>Терапия</option>
+              </select>
+              <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-[#607789]">▼</span>
+            </div>
+
+            <label class="sr-only" for="name-primary">Ваше имя</label>
+            <input
+              id="name-primary"
+              name="name-primary"
+              type="text"
+              placeholder="Ваше имя"
+              class="h-[54px] w-full rounded-[4px] border border-white/20 bg-white px-5 text-[14px] text-[#1b2a39] outline-none transition placeholder:text-[#8a97a5] focus:border-[#005b8f]"
+            >
+
+            <label class="sr-only" for="doctor-primary">Выберите врача</label>
+            <div class="relative">
+              <select
+                id="doctor-primary"
+                name="doctor-primary"
+                class="h-[54px] w-full appearance-none rounded-[4px] border border-white/20 bg-white px-5 pr-10 text-[14px] text-[#1b2a39] outline-none transition focus:border-[#005b8f]"
+              >
+                <option>Выберите врача</option>
+                <option>Кротов Андрей</option>
+                <option>Савина Наталья</option>
+                <option>Николаева Оксана</option>
+              </select>
+              <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-xs text-[#607789]">▼</span>
+            </div>
+
+            <label class="sr-only" for="phone-primary">Ваш телефон</label>
+            <input
+              id="phone-primary"
+              name="phone-primary"
+              type="text"
+              placeholder="Ваш телефон"
+              class="h-[54px] w-full rounded-[4px] border border-white/20 bg-white px-5 text-[14px] text-[#1b2a39] outline-none transition placeholder:text-[#8a97a5] focus:border-[#005b8f]"
+            >
+          </form>
+        </div>
+
+        <div class="lg:pt-1 lg:justify-self-end">
+          <p class="max-w-[320px] text-[14px] leading-6 text-white/85">
+            Оставьте заявку и мы свяжемся с вами в ближайшее время, чтобы подобрать удобный формат приёма.
+          </p>
+
+          <button
+            type="button"
+            class="mt-6 inline-flex h-[54px] w-full items-center justify-center rounded-[4px] bg-[#16c7c8] px-6 text-[14px] font-semibold text-white transition hover:bg-[#10b6b7]"
+          >
+            Оставить заявку
+          </button>
+
+          <label class="mt-5 flex items-start gap-3 text-xs leading-5 text-white/85">
+            <input
+              type="checkbox"
+              class="mt-1 h-4 w-4 rounded border border-white/30 accent-white"
+            >
+            <span>
+              Отправляя заявку, вы соглашаетесь на нашу политику конфиденциальности.
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hidden bg-white py-8">
   <div class="mx-auto max-w-[1200px] px-6">
     <div class="rounded-[12px] bg-gradient-to-r from-cyan-500 to-blue-600 px-12 py-10">
       <div class="mb-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -250,20 +620,20 @@
     </div>
   </div>
 </section>
-<section class="bg-white py-12">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <div class="mb-8 flex items-center justify-between">
-      <h2 class="text-[42px] font-bold leading-tight text-[#222]">
+<section class="hidden bg-white py-12 lg:py-14">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="mb-8 flex items-center justify-between gap-4">
+      <h2 class="max-w-[760px] text-[28px] font-semibold leading-tight text-[#111827] sm:text-[32px] lg:text-[36px]">
         Популярные услуги в косметологии
       </h2>
 
       <div class="flex items-center gap-3">
-        <button class="flex h-10 w-10 items-center justify-center rounded-full bg-[#eef3f6] text-[#7a8a99]">
+        <button class="flex h-10 w-10 items-center justify-center rounded-full bg-[#eef3f6] text-[#7f8fa0] transition hover:bg-[#dde7ee]">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <button class="flex h-10 w-10 items-center justify-center rounded-full bg-[#0b74b8] text-white">
+        <button class="flex h-10 w-10 items-center justify-center rounded-full bg-[#0a84d6] text-white transition hover:bg-[#086fb3]">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
@@ -271,63 +641,63 @@
       </div>
     </div>
 
-    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-      <div class="overflow-hidden bg-[#edf2f5]">
+    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+      <div class="overflow-hidden rounded-[6px] bg-white">
         <img
           src="../IMage/behruz/image.jpg"
           alt="Магнитно-резонансная томография"
-          class="h-[210px] w-full object-cover"
+          class="h-[208px] w-full object-cover"
         />
-        <div class="p-5">
-          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#222]">
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
             Магнитно-резонансная томография (МРТ)
           </h3>
-          <button class="mt-6 w-[132px] rounded bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
+          <button class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
             Записаться
           </button>
         </div>
       </div>
-      <div class="overflow-hidden bg-[#edf2f5]">
+      <div class="overflow-hidden rounded-[6px] bg-white">
         <img
           src="../IMage/behruz/image-1.jpg"
           alt="Гастроскопия"
-          class="h-[210px] w-full object-cover"
+          class="h-[208px] w-full object-cover"
         />
-        <div class="p-5">
-          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#222]">
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
             Гастроскопия
           </h3>
-          <button class="mt-6 w-[132px] rounded bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
+          <button class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
             Записаться
           </button>
         </div>
       </div>
-      <div class="overflow-hidden bg-[#edf2f5]">
+      <div class="overflow-hidden rounded-[6px] bg-white">
         <img
           src="../IMage/behruz/image-2.jpg"
           alt="Прием гинеколога"
-          class="h-[210px] w-full object-cover"
+          class="h-[208px] w-full object-cover"
         />
-        <div class="p-5">
-          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#222]">
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
             Прием гинеколога
           </h3>
-          <button class="mt-6 w-[132px] rounded bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
+          <button class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
             Записаться
           </button>
         </div>
       </div>
-      <div class="overflow-hidden bg-[#edf2f5]">
+      <div class="overflow-hidden rounded-[6px] bg-white">
         <img
           src="../IMage/behruz/image-3.jpg"
           alt="Лабораторная диагностика"
-          class="h-[210px] w-full object-cover"
+          class="h-[208px] w-full object-cover"
         />
-        <div class="p-5">
-          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#222]">
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
             Лабораторная диагностика
           </h3>
-          <button class="mt-6 w-[132px] rounded bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
+          <button class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]">
             Записаться
           </button>
         </div>
@@ -335,7 +705,124 @@
     </div>
   </div>
 </section>
-<section class="bg-white py-12">
+<section id="services" class="bg-white py-12 lg:py-14">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="mb-8 flex items-center justify-between gap-4">
+      <h2 class="max-w-[760px] text-[28px] font-semibold leading-tight text-[#111827] sm:text-[32px] lg:text-[36px]">
+        Популярные услуги в косметологии
+      </h2>
+
+      <div class="flex items-center gap-3">
+        <button
+          type="button"
+          aria-label="Предыдущий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#eef3f6] text-[#7f8fa0] transition hover:bg-[#dde7ee]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          aria-label="Следующий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#0a84d6] text-white transition hover:bg-[#086fb3]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+      <article>
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img
+            src="../IMage/behruz/image.jpg"
+            alt="Магнитно-резонансная томография"
+            class="h-[208px] w-full object-cover"
+          />
+        </div>
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
+            Магнитно-резонансная томография (МРТ)
+          </h3>
+          <a
+            href="#appointment-primary"
+            class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+
+      <article>
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img
+            src="../IMage/behruz/image-1.jpg"
+            alt="Гастроскопия"
+            class="h-[208px] w-full object-cover"
+          />
+        </div>
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
+            Гастроскопия
+          </h3>
+          <a
+            href="#appointment-primary"
+            class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+
+      <article>
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img
+            src="../IMage/behruz/image-2.jpg"
+            alt="Прием гинеколога"
+            class="h-[208px] w-full object-cover"
+          />
+        </div>
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
+            Прием гинеколога
+          </h3>
+          <a
+            href="#appointment-primary"
+            class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+
+      <article>
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img
+            src="../IMage/behruz/image-3.jpg"
+            alt="Лабораторная диагностика"
+            class="h-[208px] w-full object-cover"
+          />
+        </div>
+        <div class="flex min-h-[146px] flex-col px-1 pt-4">
+          <h3 class="min-h-[56px] text-[18px] leading-7 text-[#1f2937]">
+            Лабораторная диагностика
+          </h3>
+          <a
+            href="#appointment-primary"
+            class="mt-5 inline-flex w-[132px] items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="hidden bg-white py-12">
   <div class="mx-auto max-w-[1200px] px-6">
     <div class="rounded-[14px] bg-[#edf2f5] px-8 py-10 md:px-10 md:py-12">
       <h2 class="text-[20px] font-bold leading-tight text-[#222] md:text-[24px]">
@@ -452,7 +939,71 @@
     </div>
   </div>
 </section>
-<section class="bg-white py-12">
+<section id="about-cosmetology" class="bg-white py-12 lg:py-14">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="rounded-[10px] bg-[#edf3f7] p-6 sm:p-8 lg:p-10">
+      <h2 class="max-w-[880px] text-[24px] font-semibold leading-tight text-[#111827] sm:text-[28px] lg:text-[32px]">
+        Все, что вы должны знать о косметологии: секреты красоты и здоровья
+      </h2>
+
+      <p class="mt-4 max-w-[1110px] text-[14px] leading-7 text-[#566374]">
+        Косметология объединяет профессиональный уход, современные аппаратные методики и индивидуальный подбор процедур. Грамотно
+        составленная программа помогает улучшить качество кожи, сохранить естественную свежесть лица и поддерживать здоровый внешний вид
+        без лишней нагрузки на организм.
+      </p>
+
+      <div class="mt-8 space-y-8">
+        <div>
+          <h3 class="text-[16px] font-semibold text-[#0a84d6]">
+            1. Роль косметолога в поддержании красоты и здоровья
+          </h3>
+          <p class="mt-3 text-[14px] leading-7 text-[#566374]">
+            Косметолог оценивает состояние кожи, определяет ее потребности и подбирает уход с учетом возраста, типа кожи и образа жизни.
+            Регулярные консультации помогают не только решать текущие эстетические задачи, но и предупреждать появление новых проблем.
+          </p>
+        </div>
+
+        <div class="border-t border-[#d9e5eb] pt-8">
+          <h3 class="text-[16px] font-semibold text-[#0a84d6]">
+            2. Популярные процедуры в современной косметологии
+          </h3>
+          <p class="mt-3 text-[14px] leading-7 text-[#566374]">
+            В зависимости от запроса пациента могут применяться чистки, пилинги, аппаратные процедуры, инъекционные методики и деликатные
+            программы восстановления. Главная задача таких процедур не только улучшить внешний вид, но и поддержать здоровье кожи на
+            глубоком уровне.
+          </p>
+        </div>
+
+        <div class="border-t border-[#d9e5eb] pt-8">
+          <h3 class="text-[16px] font-semibold text-[#0a84d6]">
+            3. Почему важен регулярный домашний уход
+          </h3>
+          <p class="mt-3 text-[14px] leading-7 text-[#566374]">
+            Результат салонных процедур держится заметно лучше, если дома использовать подходящие средства очищения, увлажнения и защиты.
+            Именно сочетание профессионального ухода и повседневной рутины помогает сохранить ровный тон, гладкость и комфорт кожи.
+          </p>
+        </div>
+
+        <div class="border-t border-[#d9e5eb] pt-8">
+          <h3 class="text-[16px] font-semibold text-[#0a84d6]">
+            4. Как выбрать процедуры и косметические продукты
+          </h3>
+          <p class="mt-3 text-[14px] leading-7 text-[#566374]">
+            Универсальных решений в косметологии почти не бывает. То, что отлично подходит одному пациенту, может не дать такого же
+            эффекта другому. Поэтому выбор процедур и средств лучше делать вместе со специалистом, который учитывает особенности кожи,
+            чувствительность и желаемый результат.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 rounded-[8px] bg-white px-5 py-4 text-[13px] italic leading-7 text-[#6b7280] sm:px-6">
+        Красивый результат начинается не с одной процедуры, а с системного ухода и правильно выбранной тактики лечения.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hidden bg-white py-12">
   <div class="mx-auto max-w-[1200px] px-6">
 
     <div class="mb-8 flex items-center justify-between">
@@ -500,7 +1051,104 @@
     </div>
   </div>
 </section>
-<section class="bg-white py-12">
+<section id="doctors" class="bg-white py-12 lg:py-14">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="mb-8 flex items-center justify-between gap-4">
+      <h2 class="text-[28px] font-semibold leading-tight text-[#111827] sm:text-[32px] lg:text-[36px]">
+        Врачи
+      </h2>
+
+      <div class="flex items-center gap-3">
+        <button
+          type="button"
+          aria-label="Предыдущий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#eef3f6] text-[#7f8fa0] transition hover:bg-[#dde7ee]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          aria-label="Следующий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#0a84d6] text-white transition hover:bg-[#086fb3]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+      <article class="flex flex-col">
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img src="../IMage/behruz/photo.jpg" alt="Андрей Кротов" class="h-[240px] w-full object-cover" />
+        </div>
+        <div class="flex flex-1 flex-col px-1 pt-4">
+          <h3 class="text-[16px] font-medium leading-6 text-[#0a84d6]">Кротов Андрей</h3>
+          <p class="mt-1 min-h-[44px] text-[14px] leading-6 text-[#6b7280]">Главный врач, уролог, андролог</p>
+          <a
+            href="#appointment-primary"
+            class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+
+      <article class="flex flex-col">
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img src="../IMage/behruz/photo-1.jpg" alt="Наталья Савина" class="h-[240px] w-full object-cover" />
+        </div>
+        <div class="flex flex-1 flex-col px-1 pt-4">
+          <h3 class="text-[16px] font-medium leading-6 text-[#0a84d6]">Савина Наталья</h3>
+          <p class="mt-1 min-h-[44px] text-[14px] leading-6 text-[#6b7280]">Врач-невролог</p>
+          <a
+            href="#appointment-primary"
+            class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+
+      <article class="flex flex-col">
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img src="../IMage/behruz/photo-2.jpg" alt="Гузель Зотова" class="h-[240px] w-full object-cover" />
+        </div>
+        <div class="flex flex-1 flex-col px-1 pt-4">
+          <h3 class="text-[16px] font-medium leading-6 text-[#0a84d6]">Зотова Гузель</h3>
+          <p class="mt-1 min-h-[44px] text-[14px] leading-6 text-[#6b7280]">Врач-терапевт</p>
+          <a
+            href="#appointment-primary"
+            class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+
+      <article class="flex flex-col">
+        <div class="overflow-hidden rounded-[6px] bg-[#edf3f7]">
+          <img src="../IMage/behruz/photo-3.jpg" alt="Оксана Николаева" class="h-[240px] w-full object-cover" />
+        </div>
+        <div class="flex flex-1 flex-col px-1 pt-4">
+          <h3 class="text-[16px] font-medium leading-6 text-[#0a84d6]">Николаева Оксана</h3>
+          <p class="mt-1 min-h-[44px] text-[14px] leading-6 text-[#6b7280]">Врач-терапевт</p>
+          <a
+            href="#appointment-primary"
+            class="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#045f99] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#034f80]"
+          >
+            Записаться
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="hidden bg-white py-12">
   <div class="mx-auto max-w-[1200px] px-6">
 
     <div class="mb-8 flex items-center justify-between">
@@ -559,7 +1207,110 @@
     </div>
   </div>
 </section>
-<section class="bg-white py-12">
+<section id="reviews" class="bg-white py-12 lg:py-14">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="mb-8 flex items-center justify-between gap-4">
+      <h2 class="text-[28px] font-semibold leading-tight text-[#111827] sm:text-[32px] lg:text-[36px]">
+        Отзывы пациентов
+      </h2>
+
+      <div class="flex items-center gap-3">
+        <button
+          type="button"
+          aria-label="Предыдущий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#eef3f6] text-[#7f8fa0] transition hover:bg-[#dde7ee]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          aria-label="Следующий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#0a84d6] text-white transition hover:bg-[#086fb3]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid gap-8 lg:grid-cols-2 lg:gap-10">
+      <article class="flex h-full flex-col">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-[16px] font-medium leading-6 text-[#111827]">Балушина Татьяна</h3>
+            <p class="mt-1 text-[13px] text-[#9ca3af]">18 апреля 2022</p>
+          </div>
+        </div>
+
+        <div class="mt-3 flex items-center gap-1 text-[15px] text-[#ff7a00]">
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </div>
+
+        <p class="mt-4 max-w-[560px] flex-1 text-[14px] leading-7 text-[#4b5563]">
+          Попала на прием спонтанно и осталась очень довольна внимательным подходом врача. Консультация прошла спокойно, подробно и без
+          спешки, а после обследования стало намного понятнее, как действовать дальше.
+        </p>
+
+        <div class="mt-5">
+          <a
+            href="#reviews"
+            class="inline-flex items-center justify-center rounded-[4px] border border-[#d6e2ea] px-5 py-2.5 text-sm font-medium text-[#0a84d6] transition hover:border-[#0a84d6]"
+          >
+            Подробнее
+          </a>
+        </div>
+
+        <p class="mt-5 text-[14px] text-[#6b7280]">
+          Врач: <span class="text-[#0a84d6]">Савина Наталья Владимировна</span>
+        </p>
+      </article>
+
+      <article class="flex h-full flex-col">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h3 class="text-[16px] font-medium leading-6 text-[#111827]">Трофимов Иван</h3>
+            <p class="mt-1 text-[13px] text-[#9ca3af]">24 ноября 2021</p>
+          </div>
+        </div>
+
+        <div class="mt-3 flex items-center gap-1 text-[15px] text-[#ff7a00]">
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </div>
+
+        <p class="mt-4 max-w-[560px] flex-1 text-[14px] leading-7 text-[#4b5563]">
+          Большое спасибо врачу за тщательное обследование и понятные рекомендации. Прием прошел внимательно и доброжелательно, после
+          консультации осталось ощущение уверенности и спокойствия.
+        </p>
+
+        <div class="mt-5">
+          <a
+            href="#reviews"
+            class="inline-flex items-center justify-center rounded-[4px] border border-[#d6e2ea] px-5 py-2.5 text-sm font-medium text-[#0a84d6] transition hover:border-[#0a84d6]"
+          >
+            Подробнее
+          </a>
+        </div>
+
+        <p class="mt-5 text-[14px] text-[#6b7280]">
+          Врач: <span class="text-[#0a84d6]">Кротов Андрей Михайлович</span>
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="hidden bg-white py-12">
   <div class="mx-auto max-w-[1200px] px-6">
 
     <div class="mb-8 flex items-center justify-between">
@@ -610,57 +1361,167 @@
     </div>
   </div>
 </section>
-<section class="bg-white py-6">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <div class="rounded-[12px] bg-gradient-to-r from-[#18b9d3] to-[#156df3] px-12 py-9">
-      <div class="grid grid-cols-1 gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <h2 class="text-[36px] font-bold leading-tight text-white">
+<section id="licenses" class="bg-white py-12 lg:py-14">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="mb-8 flex items-center justify-between gap-4">
+      <h2 class="text-[28px] font-semibold leading-tight text-[#111827] sm:text-[32px] lg:text-[36px]">
+        Лицензии и сертификаты
+      </h2>
+
+      <div class="flex items-center gap-3">
+        <button
+          type="button"
+          aria-label="Предыдущий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#eef3f6] text-[#7f8fa0] transition hover:bg-[#dde7ee]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          aria-label="Следующий слайд"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-[#0a84d6] text-white transition hover:bg-[#086fb3]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+      <article>
+        <div class="flex h-[278px] items-center justify-center rounded-[6px] border border-[#dce6ec] bg-white p-3">
+          <img
+            src="../IMage/behruz/certificate1.jpg"
+            alt="Сертификат ГОСТ ISO 9001-2015"
+            class="h-full w-full object-contain"
+          />
+        </div>
+        <p class="mt-3 text-[13px] leading-6 text-[#6b7280]">
+          Сертификат ГОСТ ISO 9001-2015
+        </p>
+      </article>
+
+      <article>
+        <div class="flex h-[278px] items-center justify-center rounded-[6px] border border-[#dce6ec] bg-white p-3">
+          <img
+            src="../IMage/behruz/certificate2.jpg"
+            alt="Лицензия Л041-01162-50/00369739"
+            class="h-full w-full object-contain"
+          />
+        </div>
+        <p class="mt-3 text-[13px] leading-6 text-[#0a84d6]">
+          Лицензия Л041-01162-50/00369739
+        </p>
+      </article>
+
+      <article>
+        <div class="flex h-[278px] items-center justify-center rounded-[6px] border border-[#dce6ec] bg-white p-3">
+          <img
+            src="../IMage/behruz/certificate3.jpg"
+            alt="Лицензия Л017-01162-50/00561579"
+            class="h-full w-full object-contain"
+          />
+        </div>
+        <p class="mt-3 text-[13px] leading-6 text-[#6b7280]">
+          Лицензия Л017-01162-50/00561579
+        </p>
+      </article>
+
+      <article>
+        <div class="flex h-[278px] items-center justify-center rounded-[6px] border border-[#dce6ec] bg-white p-3">
+          <img
+            src="../IMage/behruz/certificate4.jpg"
+            alt="Лицензия Л041-01162-50/00338967"
+            class="h-full w-full object-contain"
+          />
+        </div>
+        <p class="mt-3 text-[13px] leading-6 text-[#6b7280]">
+          Лицензия Л041-01162-50/00338967
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="bg-white py-12 lg:py-14">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <h2 class="mb-8 text-[28px] font-semibold leading-tight text-[#111827] sm:text-[32px] lg:text-[36px]">
+      Как нас найти
+    </h2>
+
+    <div class="overflow-hidden rounded-[8px] border border-[#dce6ec] bg-white">
+      <img
+        src="../IMage/behruz/map.png"
+        alt="Карта с расположением медицинского центра"
+        class="h-[300px] w-full object-cover sm:h-[360px] lg:h-[420px]"
+      />
+    </div>
+  </div>
+</section>
+
+<section id="appointment-bottom" class="bg-white py-6 lg:py-8">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="rounded-[10px] bg-[linear-gradient(90deg,#15b9d2_0%,#0b84d6_100%)] px-5 py-7 sm:px-8 lg:px-10 lg:py-9">
+      <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+        <h2 class="text-[30px] font-semibold leading-tight text-white sm:text-[34px]">
           Записаться на приём
         </h2>
 
-        <div class="flex justify-start lg:justify-end">
-          <p class="max-w-[360px] text-[15px] leading-7 text-white/90">
-            Оставьте заявку и мы свяжемся с вами в ближайшее время
-          </p>
-        </div>
+        <p class="max-w-[360px] text-[14px] leading-6 text-white/90 lg:justify-self-end">
+          Оставьте заявку и администратор свяжется с вами, чтобы подобрать удобное время приёма
+        </p>
       </div>
 
-      <div class="mt-10 grid gap-5 lg:grid-cols-[1fr_1fr_1fr]">
-        <select class="h-[66px] rounded-[4px] border-0 bg-white px-6 text-[16px] text-[#1f2937] outline-none">
+      <form class="mt-8 grid gap-4 lg:grid-cols-3 lg:gap-5">
+        <select
+          id="bottom-direction"
+          class="h-[54px] rounded-[4px] border-0 bg-white px-5 text-[14px] text-[#1f2937] outline-none"
+        >
           <option>Выберите направление</option>
         </select>
 
         <input
+          id="bottom-name"
           type="text"
           placeholder="Ваше имя"
-          class="h-[66px] rounded-[4px] border-0 bg-white px-6 text-[16px] text-[#1f2937] outline-none placeholder:text-[#6b7280]"
+          class="h-[54px] rounded-[4px] border-0 bg-white px-5 text-[14px] text-[#1f2937] outline-none placeholder:text-[#8a97a5]"
         />
 
-        <button class="h-[66px] rounded-[4px] bg-[#19dc68] px-6 text-[16px] font-medium text-white">
+        <button
+          type="button"
+          class="h-[54px] rounded-[4px] bg-[#19dc68] px-5 text-[14px] font-medium text-white transition hover:bg-[#17c15b]"
+        >
           Оставить заявку
         </button>
 
-        <select class="h-[66px] rounded-[4px] border-0 bg-white px-6 text-[16px] text-[#1f2937] outline-none">
+        <select
+          id="bottom-doctor"
+          class="h-[54px] rounded-[4px] border-0 bg-white px-5 text-[14px] text-[#1f2937] outline-none"
+        >
           <option>Выберите врача</option>
         </select>
 
         <input
+          id="bottom-phone"
           type="text"
           placeholder="Ваш телефон"
-          class="h-[66px] rounded-[4px] border-0 bg-white px-6 text-[16px] text-[#1f2937] outline-none placeholder:text-[#6b7280]"
+          class="h-[54px] rounded-[4px] border-0 bg-white px-5 text-[14px] text-[#1f2937] outline-none placeholder:text-[#8a97a5]"
         />
 
-        <label class="flex items-start gap-3 pt-2 text-[12px] leading-6 text-white/90">
-          <input type="checkbox" class="mt-1 h-4 w-4 shrink-0" />
+        <label class="flex items-start gap-3 pt-1 text-[12px] leading-5 text-white/90 lg:pt-2">
+          <input type="checkbox" class="mt-0.5 h-4 w-4 shrink-0 rounded border-white/60" />
           <span>
-            Отправляя заявку, вы соглашаетесь на нашу политику конфиденциальности
+            Отправляя заявку, вы соглашаетесь на обработку персональных данных и политику конфиденциальности
           </span>
         </label>
-      </div>
+      </form>
     </div>
   </div>
 </section>
-<section class="bg-gradient-to-r from-cyan-500 to-blue-600 py-14">
+<section class="hidden bg-gradient-to-r from-cyan-500 to-blue-600 py-14">
   <div class="mx-auto max-w-[1200px] px-6">
 
     <div class="flex items-center justify-between mb-8">
@@ -731,72 +1592,80 @@
     </div>
   </div>
 </section>
-<footer class="bg-[#eef2f5] pt-10 pb-6">
-  <div class="mx-auto max-w-[1200px] px-6">
-    <div class="mb-8 flex flex-wrap items-center justify-between gap-6 border-b border-[#d9e1e8] pb-6">
-      <div class="flex items-center gap-3">
-        <div>
-          <h3 class="text-3xl font-bold tracking-tight text-[#0b5f98]"><img src="../IMage/behruz/logo.svg" alt=""></h3>
-          <p class="text-xs text-gray-500">городской медицинский центр</p>
-        </div>
-      </div>
+<footer id="footer-contacts" class="bg-[#eef2f5] pt-10 pb-6">
+  <div class="mx-auto max-w-[1280px] px-4 sm:px-6">
+    <div class="flex flex-col gap-6 border-b border-[#d9e2e8] pb-6 lg:flex-row lg:items-center lg:justify-between">
+      <a href="./behruz.html" class="shrink-0">
+        <img
+          src="../IMage/behruz/logo.svg"
+          alt="Городской медицинский центр"
+          class="h-11 w-auto sm:h-12"
+        />
+      </a>
 
-      <nav class="flex flex-wrap gap-6 text-[14px] text-[#2f3b4a]">
-        <a href="#" class="hover:text-[#0b74b8]">Направления</a>
-        <a href="#" class="hover:text-[#0b74b8]">Услуги</a>
-        <a href="#" class="hover:text-[#0b74b8]">Врачи</a>
-        <a href="#" class="hover:text-[#0b74b8]">Отзывы</a>
-        <a href="#" class="hover:text-[#0b74b8]">Акции</a>
-        <a href="#" class="hover:text-[#0b74b8]">О центре</a>
-        <a href="#" class="hover:text-[#0b74b8]">Детство</a>
-        <a href="#" class="hover:text-[#0b74b8]">Контакты</a>
+      <nav class="flex flex-wrap gap-x-6 gap-y-3 text-[14px] text-[#314252]">
+        <a href="./behruz.html#prices" class="transition hover:text-[#0a84d6]">Стоимость</a>
+        <a href="./behruz.html#services" class="transition hover:text-[#0a84d6]">Услуги</a>
+        <a href="./behruz.html#doctors" class="transition hover:text-[#0a84d6]">Врачи</a>
+        <a href="./behruz.html#reviews" class="transition hover:text-[#0a84d6]">Отзывы</a>
+        <a href="./behruz.html#licenses" class="transition hover:text-[#0a84d6]">Лицензии</a>
+        <a href="./behruz.html#contacts" class="transition hover:text-[#0a84d6]">Контакты</a>
       </nav>
     </div>
-    <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
-      <div>
-        <p class="text-[14px] leading-6 text-[#7a8694]">
+
+    <div class="grid gap-8 pt-7 lg:grid-cols-[1.15fr_1fr_1fr_1fr]">
+      <div class="space-y-5">
+        <p class="max-w-[260px] text-[13px] leading-6 text-[#7a8694]">
           © 2011–2023 Городской Медицинский Центр. Все права защищены.
         </p>
-        <a href="#" class="mt-8 inline-block text-[13px] text-[#a0a9b3] hover:text-[#0b74b8]">
+        <a href="#" class="inline-block text-[13px] text-[#9aa7b3] transition hover:text-[#0a84d6]">
           Политика конфиденциальности
         </a>
       </div>
-      <div>
-        <a href="#" class="block text-[18px] font-semibold text-[#0b74b8]">
+
+      <div class="space-y-3">
+        <a href="tel:84959260603" class="block text-[18px] font-semibold text-[#0a84d6] transition hover:text-[#086fb3]">
           8 (495) 926-06-03
         </a>
-        <a href="#" class="mt-3 block text-[18px] font-semibold text-[#0b74b8]">
+        <a href="tel:84955880880" class="block text-[18px] font-semibold text-[#0a84d6] transition hover:text-[#086fb3]">
           8 (495) 588-08-80
         </a>
-
-        <div class="mt-6 flex items-center gap-2 text-[14px] text-[#25D366]">
-          <span><img src="../IMage/behruz/socialWhatsApp.svg" alt=""></span>
-        </div>
+        <a
+          href="https://wa.me/74959260603"
+          class="inline-flex items-center gap-2 text-[14px] text-[#25D366] transition hover:opacity-80"
+        >
+          <img src="../IMage/behruz/socialWhatsApp.svg" alt="" class="h-5 w-5" />
+          Whatsapp
+        </a>
       </div>
-      <div class="text-[14px] leading-6 text-[#5d6977]">
-        <p>г. Мытищи, ул. Рождественская, д.7</p>
-        <p class="mt-5">Ежедневно с 9.00 до 21.00</p>
 
-        <div class="mt-6 flex items-center gap-3">
-          <a href="#" class="text-[#4c75a3] hover:underline"><img src="../IMage/behruz/vk.svg" alt=""></a>
-        </div>
+      <div class="space-y-4 text-[14px] leading-6 text-[#5d6977]">
+        <p>г. Мытищи, ул. Рождественская, д. 7</p>
+        <p>Ежедневно с 9:00 до 21:00</p>
+        <a href="https://vk.com/" class="inline-flex items-center gap-2 text-[#4c75a3] transition hover:opacity-80">
+          <img src="../IMage/behruz/vk.svg" alt="" class="h-5 w-5" />
+          Мы в VK
+        </a>
       </div>
-      <div class="flex flex-col items-start lg:items-end">
-        <button class="rounded bg-[#dfe6eb] px-6 py-4 text-[14px] font-medium text-[#5b6773] hover:bg-[#d3dce3]">
+
+      <div class="flex flex-col items-start gap-5 lg:items-end">
+        <button
+          type="button"
+          class="rounded-[4px] bg-[#dfe6eb] px-6 py-3.5 text-[14px] font-medium text-[#5b6773] transition hover:bg-[#d3dce3]"
+        >
           Заказать обратный звонок
         </button>
-
-        <a href="#" class="mt-8 text-[14px] text-[#5d6977]">
+        <a href="mailto:info@gormedcentre.ru" class="text-[14px] text-[#5d6977] transition hover:text-[#0a84d6]">
           info@gormedcentre.ru
         </a>
-
-        <label class="mt-6 flex items-center gap-2 text-[14px] text-[#5d6977]"><img src="../IMage/behruz/iconGlass.svg" alt="">
+        <span id="accessibility" class="inline-flex items-center gap-2 text-[14px] text-[#5d6977]">
+          <img src="../IMage/behruz/iconGlass.svg" alt="" class="h-4 w-4" />
           Версия для слабовидящих
-        </label>
+        </span>
       </div>
-
     </div>
   </div>
 </footer>
 </body>
 </html>
+
